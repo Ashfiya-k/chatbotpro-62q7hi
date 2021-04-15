@@ -1,0 +1,50 @@
+ 
+ .login
+ { display: block;
+  font-style: italic;
+  text-decoration: none;
+  
+  border-radius: 100px 80px;
+   outline:none;
+   padding:10px;
+   margin:5px;
+  color: rgb(212, 175, 55);
+ }
+
+.input
+ {
+   display: block;
+  font-style: italic;
+  text-decoration: none;
+  width:fit-content;
+  border-radius: 100px 80px;
+   outline:none;
+   padding:10px;
+   margin:5px;
+  color: rgb(212, 175, 55);
+ }
+ form{
+    display: block;
+  font-style: italic;
+  text-decoration: none;
+  width:50%;
+  border-radius: 100px 80px;
+   outline:none;
+   padding:10px;
+   margin:5px;
+  color: rgb(212, 175, 55);
+  
+ }
+
+ .navi {
+   background:black;
+  display: block;
+  font-style: italic;
+  text-decoration: none;
+  border: solid;
+  border-radius: 100px 80px;
+   outline:none;
+   padding:10px;
+   margin:5px;
+  color: rgb(212, 175, 55);
+}

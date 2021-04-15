@@ -1,0 +1,82 @@
+/* @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css');
+@import url('https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'); */
+
+.image{
+  width:193px;
+  height:287px;
+}
+
+.gallery {
+  width: 200px;
+  height: 400px;
+}
+.option{
+  border:solid;
+}
+.container{
+  margin-top: 20px;;
+}
+carousel {
+z-index: 60;
+width:1350px;
+height:650px;
+}
+
+/* @media only screen and (max-width: 600px) 
+{
+  carousel {
+    cell-width:100%;
+z-index: 60;
+width:600px;
+height:570px;
+}
+}
+
+
+@media only screen and (min-width: 600px) {
+   carousel {
+z-index: 60;
+width:700px;
+height:500px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+     carousel {
+z-index: 60;
+width:768px;
+height:650px;
+}
+}
+
+@media only screen and (min-width: 992px) {
+    carousel {
+z-index: 60;
+width:992px;
+height:650px;
+}
+} 
+
+@media only screen and (min-width: 1200px) {
+  carousel {
+z-index: 60;
+width:1350px;
+height:650px;
+}
+}  */
+
+
+footer{
+    display:flex;
+  font-style: italic;
+  text-decoration: none;
+  border: solid;
+    border-style: groove;
+      border-radius: 8px;
+   outline:none;
+   padding:10px;
+   margin:5px;
+ border-color: rgb(212, 175, 55);
+
+}

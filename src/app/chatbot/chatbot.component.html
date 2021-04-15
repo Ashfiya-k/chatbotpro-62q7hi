@@ -1,0 +1,26 @@
+
+
+
+
+<div id="bot" class="container">
+
+ <div id="msgBox" #msgBox  [scrollTop]="scrolltop"  >
+    <div *ngFor="let x of sendText,let i = index">
+    <p id="customer"  [ngStyle]="{'backgroundColor':i%2===0?'aqua':'transparent','margin-left':i%2===0?'30px':'5px','margin-right':i%2===0?'5px':'30px'}">
+        {{x}}
+      </p>
+      <br />
+      
+    </div>
+ </div>
+  
+
+
+<div id="inputBox">
+ <form>
+<input type="text" class="text"   #txt required>
+<button  type="submit" class="btn btn-default text"  (click)="onSend(txt)"><b> > </b></button>
+ </form>
+</div> 
+
+</div>

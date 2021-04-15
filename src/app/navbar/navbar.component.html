@@ -1,0 +1,80 @@
+
+<header>
+<nav class="navbar navbar-expand-lg  " role="navigation">
+
+	<a class="navbar-brand">
+		<img  id="logo" src="https://cdn.jsdelivr.net/gh/Ashfiya-k/chatbotpro@master/royal-dining-logo.png" />
+   </a>
+
+
+		<button class="navbar-toggler navbar-light "  (click)="onNavbarShow()" data-toggle="collapse" [ngClass]="{'searchbar': navbarStatus==true ? true:false}"
+  aria-expanded="false" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  	<div class="collapse navbar-collapse" [ngClass]="{'show':navbarStatus}" >
+			<div class="navbar-nav ml-auto ">
+				<a class="navi nav-link nav-item" routerLink="/" routerLinkActive="active"(click)="navbarStatus=false">Home</a>
+				<a class="navi nav-link nav-item" routerLink="/menu" routerLinkActive="active"(click)="navbarStatus=false">Menu</a>
+				<a class="navi nav-link nav-item" [routerLink]="['/contacts']" routerLinkActive="active" (click)="navbarStatus=false">Contacts</a>
+        <a class="navi nav-link nav-item" [routerLink]="['/aboutus']" routerLinkActive="active"  (click)="navbarStatus=false">AboutUs</a>
+        <a class="navi nav-link nav-item" [routerLink]="['/log']" routerLinkActive="active"  (click)="navbarStatus=false">Login</a>
+				
+
+			</div>
+		</div>
+
+
+
+</nav>
+</header>
+
+
+
+<footer>
+  <app-chatbot *ngIf="chatbotStatus"></app-chatbot>
+  	<button class="navi nav-link nav-item " (click)="slideToggle()">Bot</button>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <header> 
+	<nav class="navbar">
+		<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-1">
+			<div class="navbar-header">
+				<img  id="logo" src="https://cdn.jsdelivr.net/gh/Ashfiya-k/chatbotpro@master/royal-dining-logo.png" />
+        </div>
+        </div>
+     <div class="col-sm-11">
+				<ul id="home" class="nav">
+					<li class="list class"><a class="navi active" routerLink="/home" routerLinkActive="active" >Home</a></li>
+					<li class="list"><a class="navi" href="">Menu</a></li>
+					<li class="list"><a class="navi" href="">Contacts</a></li>
+					<li class="list"><a class="navi" href="">Offers</a></li>
+					<li class="list"><a class="navi" routerLink="/chatbot" >Bot</a></li>
+					<li class="list">
+						<form class="navbar-form ">
+							<div class="input-group">
+								<input type="text"  class="searchbar"  placeholder="Search" />
+								<button type="submit" class="searchbar"><i class="glyphicon glyphicon-search"></i></button>
+
+							</div>
+						</form>
+					</li>
+
+				</ul>
+        </div>
+      </div>
+			</div>
+	</nav>
+</header>-->

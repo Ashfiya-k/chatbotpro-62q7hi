@@ -1,0 +1,69 @@
+
+
+
+
+<carousel 
+ [cellWidth]="'100%'" 
+ [autoplay]="true" 
+ [autoplayInterval]="3000" 
+ [loop]=true 
+ [dots]="true"  
+
+[height]="650"  
+   [objectFit]="'contain'"
+    [overflowCellsLimit]="1"
+    [cellsToShow]="1"
+    [pauseOnHover]="false"
+    [loop]="true"
+    >
+   <div class="carousel-cell">
+       <img  src="https://cdn.jsdelivr.net/gh/Ashfiya-k/chatbotpro@master/Pizza.jpg" > -->
+      
+   </div>
+  <div class="carousel-cell ">
+      <img [width]="1000" src="https://cdn.jsdelivr.net/gh/Ashfiya-k/chatbotpro@master/Biryani.jpg" >
+   </div>
+     <div class="carousel-cell">
+      <img  src="https://cdn.jsdelivr.net/gh/Ashfiya-k/chatbotpro@master/Mixveg.jpg" >
+   </div>
+
+</carousel> 
+
+
+ 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+     <a [routerLink]="['/log']"><img src="https://cdn.jsdelivr.net/gh/Ashfiya-k/chatbotpro@master/deliver.jpg">
+     </a>
+    </div>
+     <div class="col-sm-6">
+       <a [routerLink]="['/log']"><img class="image" src="https://cdn.jsdelivr.net/gh/Ashfiya-k/chatbotpro@2021-31-03_14-11/Pick.jpg">
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<footer  class="row">
+ 
+     <div class="col-md-6">
+    For You
+<li>Privacy</li>
+<li>Security</li>
+<li>Terms</li>
+
+
+ 
+  </div>
+
+   <div class="col-md-6">
+    Get Our App on
+<li>PlayStore</li>
+<li>App Store</li>
+
+  </div>
+  
+  
+</footer>

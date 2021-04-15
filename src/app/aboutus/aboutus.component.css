@@ -1,0 +1,15 @@
+p{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+    padding:10px;
+   border-style: groove;
+  border-radius: 8px;
+//  box-shadow: 3px 5px 3px  5px #88888888;
+  border-color: rgb(212, 175, 55);
+
+}
+h1 {
+  color: rgb(212, 175, 55);
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}

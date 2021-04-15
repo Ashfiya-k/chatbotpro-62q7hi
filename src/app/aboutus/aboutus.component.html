@@ -1,0 +1,11 @@
+<div *ngFor="let details of employ"class="container px-3">
+    <div class="row my-5 sc_box_shadow">
+      <div class="col-md-7 p-sm-5">
+        <p>Name: {{details.name}}<br>Emp Id: {{details.id}}<br>Role: {{details.role}}<br>Area: {{details.area}}<br>Location: {{details.location}} </p>
+      </div>
+      <div class="col-md-5 bg-map-inverse p-5">
+        <hr>
+      <a [routerLink]="['/editchat']" ><img class="img-fluid rounded-circle p-3" src={{details.image}} data-crop="scale" data-width="1200" data-quality="auto"></a>
+      </div>
+    </div>
+</div>
