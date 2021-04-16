@@ -1,0 +1,34 @@
+
+ <form [formGroup]="chatForm"  >
+   <label>Category : </label>&nbsp;
+   <input type="text" formControlName="category" class="input">
+   <br/>
+
+    
+  <div formArrayName="question">
+   
+   <div *ngFor="let q of question.controls;let i = index">
+     <label> Question: &nbsp;
+     <input type="text" [formControlName]="i" class="input">
+     
+     </label>
+       
+
+   </div>
+      
+ </div> 
+ <button (click)="onAddQues()"> Add </button>
+ <br/>
+
+
+ <label for="answer">Answer : </label> <br/>
+  <textarea cols="50" rows="10"  formControlName="answer" class="input"> 
+
+  </textarea>
+<br />
+
+<button type="submit" (click)="onSubmit()">Submit</button>
+ </form>
+
+
+

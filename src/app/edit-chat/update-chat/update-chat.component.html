@@ -1,0 +1,36 @@
+<form [formGroup]="updateForm">
+   
+   <label>Category : </label>&nbsp;
+     <select id="category"  (change)="onCategorySelect($event)" formControlName="category" >
+   <option *ngFor="let category of categories" >{{ category }}</option>
+  </select>
+   <br/>
+     <div formArrayName="ques">
+      <label for="question">Question : </label>  &nbsp;
+  <div *ngFor="let q of converse.question" > 
+ <input type="text" id="question" [value]="q" ><br />
+  </div>
+
+   <button (click)="getQuestion()">Previous Question</button>
+   <div *ngFor="let q of ques.controls;let i = index">
+     <label> Question: &nbsp;
+     <input type="text" [formControlName]="i" class="input">
+     
+     </label>
+       
+
+   </div>
+      
+ </div> 
+ <button (click)="onAddQues()"> Add </button>
+ <br/>
+
+
+  <label for="answer">Answer : </label> <br/>
+  <textarea cols="50" rows="10" > 
+  {{converse.answer}}
+  </textarea>
+<br />
+
+<button type="submit" (click)="onSubmit()">Submit</button>
+ </form>

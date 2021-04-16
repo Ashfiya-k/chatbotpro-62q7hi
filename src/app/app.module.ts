@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from "@angular/platform-browser";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
@@ -21,9 +21,12 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from "../environments/environment";
 import { LoginComponent } from './login/login.component';
+import { EditsComponent } from './edit-chat/edits/edits.component';
+import { AddChatComponent } from './edit-chat/add-chat/add-chat.component';
+import { UpdateChatComponent } from './edit-chat/update-chat/update-chat.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule,IvyCarouselModule,HttpClientModule, AngularFireDatabaseModule,  AngularFireModule.initializeApp(environment.firebaseConfig), ],
+  imports: [BrowserModule, FormsModule, AppRoutingModule,ReactiveFormsModule,IvyCarouselModule,HttpClientModule, AngularFireDatabaseModule,  AngularFireModule.initializeApp(environment.firebaseConfig), ],
   declarations: [
     AppComponent,
     HelloComponent,
@@ -35,6 +38,9 @@ import { LoginComponent } from './login/login.component';
     AboutusComponent,
     EditChatComponent,
     LoginComponent,
+    EditsComponent,
+    AddChatComponent,
+    UpdateChatComponent,
     
   ],
   bootstrap: [AppComponent],

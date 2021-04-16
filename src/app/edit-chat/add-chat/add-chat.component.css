@@ -1,0 +1,10 @@
+.input{
+  font-style: italic;
+  border: solid;
+  border-radius: 6px;
+  border-color: rgb(212, 175, 55);
+  color:black;
+  
+  margin-top:2px;
+  padding:10px;
+} 

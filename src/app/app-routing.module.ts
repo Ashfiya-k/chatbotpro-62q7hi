@@ -7,6 +7,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { EditChatComponent } from "./edit-chat/edit-chat.component";
 import { LoginComponent } from "./login/login.component";
+import { EditsComponent } from "./edit-chat/edits/edits.component";
 
 const routes: Routes = [
    { path:'',component:HomeComponent},
@@ -14,7 +15,9 @@ const routes: Routes = [
     { path:"menu",component:MenuComponent},
     { path:"contacts",component:ContactsComponent},
      { path:"aboutus",component:AboutusComponent},
-     { path:"editchat",component:EditChatComponent},
+  {path:"editchat",component:EditChatComponent,children:[
+       { path:":id",component:EditsComponent}
+     ]},
      { path:"log",component:LoginComponent},
   ];
 
